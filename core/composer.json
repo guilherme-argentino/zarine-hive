@@ -1,0 +1,40 @@
+{
+    "name": "laraerp/core",
+    "description": "ERP brasileiro de código fonte aberto escrito sob o Laravel Framework",
+    "keywords": ["erp", "openerp", "erp php", "laravel"],
+    "license": "MIT",
+    "type": "project",
+    "require": {
+        "php": ">=5.6.0",
+        "ext-gd":"*",
+        "ext-curl":"*",
+        "laravel/framework": "5.1.*",
+        "jansenfelipe/cidades-gratis": "^1.0",
+        "jansenfelipe/cep-gratis": "^2.0",
+        "jansenfelipe/cnpj-gratis": "^2.0",
+        "jansenfelipe/utils": "^2.0",
+        "jansenfelipe/cpf-gratis": "^2.0",
+        "jansenfelipe/cfop": "^1.0",
+        "jansenfelipe/ncm": "^1.0",
+        "jansenfelipe/nfephp-serialize": "^3.10",
+        "nfephp-org/nfephp": "^2.00",
+        "barryvdh/laravel-debugbar": "^2.0",
+        "laraerp/ordination": "^1.0",
+        "filp/whoops": "^1.1"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^3.1",
+        "phpunit/phpunit": "^4.8"
+    },
+    "autoload": {
+        "classmap": [
+            "database"
+        ],
+        "psr-4": {
+            "Laraerp\\": "src"
+        }
+    },
+    "config": {
+        "preferred-install": "dist"
+    }
+}
